@@ -1,0 +1,17 @@
+class Solution:
+    def factorial(n):
+        fact=1
+        if n==0 or n==1:
+            return n
+        else:
+            fact=n*factorial(n-1)
+            return fact
+        
+    def trailingZeroes(n):
+        i = 5
+        count=0
+        while(n/i>=1):
+            count+=n//i
+            i=i*5
+            return count
+        
